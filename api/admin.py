@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Group, Attribute, Item, ItemAttribute
+
+admin.site.register(Group)
+admin.site.register(Attribute)
+admin.site.register(Item)
+admin.site.register(ItemAttribute)
