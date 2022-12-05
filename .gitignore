@@ -1,7 +1,7 @@
 # Folders
-**/__pycache__
+obj/
+bin/
 .vscode
-
+.idea/
 # Files
 **/.env
-.postgres-auth
