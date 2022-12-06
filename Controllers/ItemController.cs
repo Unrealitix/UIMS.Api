@@ -78,6 +78,7 @@ namespace UIMS.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<Item>> PostItem(Item item)
         {
+            if (string.IsNullOrEmpty(item.Sku)) return BadRequest("Item SKU can't be empty");
             _context.Items.Add(item);
             try
             {
